@@ -25,6 +25,7 @@ failed_images=""
 while IFS= read -r image; do
     # 拉取镜像
     set +e
+    echo "debug: Pulling image $image"
     docker pull "$image"
     pull_status=$?
     if [ $pull_status -ne 0 ]; then
