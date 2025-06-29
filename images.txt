@@ -1,1 +1,1 @@
-mcp/elasticsearch:latest
+docker.io/library/python:3.10-slim-bullseye
